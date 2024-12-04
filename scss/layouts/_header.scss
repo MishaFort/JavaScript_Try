@@ -1,9 +1,23 @@
 .header {
   padding: 8px 0;
+  border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
+  color: #eaeaea;
+  background-color: var(--color-black);
+  transition: color 500ms, background-color 500ms;
 
-  @media screen and (min-width: $bp-tablet) {
+  &:hover {
+    color: var(--color-black);
+    background-color: #eaeaea;
+  }
+
+  /* @media screen and (min-width: $bp-tablet) {
     padding: 15px 0;
+  } */
+
+  &__header {
+    width: fit-content;
+    margin: 0 auto;
   }
 
   &__nav {
